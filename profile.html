@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:regular,600,700,800,900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,700" rel="stylesheet" />
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+           <div class="header__one">
+                <div class="header__logo">
+                    <a href="index.html"><img src="img/logo-header.svg" alt=""></a>
+                </div>
+                <div class="header__input">
+                    <input type="search" placeholder="Search">
+                    <a href="#"><img src="img/search-icon3.svg" alt=""></a>
+                </div>
+           </div>
+
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">My orders</a></li>
+                    <li><a href="#"><img src="img/nav-shop.svg" alt=""></a></li>
+                    <li><a href="http://127.0.0.1:5500/profile.html#"><img src="img/nav-logo.svg" alt=""></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>    
+    <div class="wrapper">
+        <main class="main">
+            <section class="profile">
+                <div class="container">
+                    <div class="profile__inner">
+                        
+                        <div class="profile__item aside">
+                            <div class="aside__title title">Settings</div>
+
+                            <ul class="aside__list">
+                                <li><a href="#tab-account">
+                                    <box-icon class="user" name='user' color='#83859C'></box-icon>
+                                    <div class="aside__list-text">
+                                        <p class="aside__list-title">Account</p>
+                                        <p class="aside__list-subtitle">Personal information</p>
+                                    </div>
+                                </a></li>
+                                <li><a href="#tab-account">
+                                    <img src="img/profile-icon2.svg" alt="">
+                                    <div class="aside__list-text">
+                                        <p class="aside__list-title">Address</p>
+                                        <p class="aside__list-subtitle">Shippings addresses</p>
+                                    </div>
+                                </a></li>
+                                <li><a href="#tab-account">
+                                    <img src="img/profile-icon3.svg" alt="">
+                                    <div class="aside__list-text">
+                                        <p class="aside__list-title">Payment method</p>
+                                        <p class="aside__list-subtitle">Connected credit cards</p>
+                                    </div>
+                                </a></li>
+                                <li><a href="#tab-account">
+                                    <img src="img/profile-icon4.svg" alt="">
+                                    <div class="aside__list-text">
+                                        <p class="aside__list-title">Security</p>
+                                        <p class="aside__list-subtitle">Password, 2FA</p>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <div class="profile__item settings" id="tab-account">
+                            <div class="settings__title title">Account</div>
+
+                            <div class="settings__box">
+                                <div class="settings__info">Personal information</div>
+
+                                <div class="settings__form">
+                                    <div class="settings__form-avatar">Avatar</div>
+                                    
+                                    <div class="settings__form-mani mani-avator">
+                                        <img src="img/setting-img.svg" alt="">
+                                        <div class="mani-avator__file">
+                                            <input type="file" accept=".jpg, .svg, .png">
+                                            <div class="img-change-btn">Change</div>
+                                        </div>
+                                        <a href="#" class="mani-avator__remove">Remove</a>
+                                    </div>
+
+                                    <form action="#" class="settings__form form">
+                                        <div class="form-info">
+                                            <div class="form-info__item line">
+                                                <p>First name</p>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-info__item">
+                                                <p>last name</p>
+                                                <input type="text">
+                                            </div>
+                                            <div class="form-info__item line">
+                                                <p>Email</p>
+                                                <input type="email">
+                                            </div>
+                                            <div class="form-info__item">
+                                                <p>Phone number</p>
+                                                <input type="tel">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="settings__flag">Email notifications</div>
+
+                                <div class="settings__not">
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="newDeals">
+                                        <label for="newDeals"><span>New deals</span></label>
+                                    </div>
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="passwordChanges">
+                                        <label for="passwordChanges"><span>Password changes</span></label>
+                                    </div>
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="newRestaraunts">
+                                        <label for="newRestaraunts"><span>New restaraunts</span></label>
+                                    </div>
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="specialOffers">
+                                        <label for="specialOffers"><span>Special offers</span></label>
+                                    </div>
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="orderStatuses">
+                                        <label for="orderStatuses"><span>Order statuses</span></label>
+                                    </div>
+                                    <div class="settings__not-item">
+                                        <input type="checkbox" id="newsletter">
+                                        <label for="newsletter"><span>Newsletter</span></label>
+                                    </div>
+                                </div>
+
+                                <div class="settings__bottons">
+                                    <div class="settings__bottons-logout">
+                                        <a href="http://127.0.0.1:5500/reg.html">Log out</a>
+                                    </div>
+                                    <div class="settings__bottons-changes">
+                                        <a class="settings__bottons-changes-btn1" href="#">Discard changes</a>
+                                        <a class="settings__bottons-changes-btn2" href="#">Save changes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+@import "_null.scss";
+
+
+//top-logo===============================================================
+.top-logo__inner{
+    padding: 20px 0;
+}
+
+//form===============================================
+.form-box__inner{
+    padding-top: 100px;
+}
+
+.form-box__title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: calc(82 * 60) / 100%;
+    letter-spacing: 0.1px;
+    color: #2B2B43;
+    margin-bottom: 16px;
+}
+.form-box__subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #545563;
+    margin-bottom: 32px;
+}
+
+
+.form{
+
+    &__field{
+        position: relative;
+        width: 350px;
+
+        p{
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            color: #545563;
+            margin-bottom: 4px;
+        }
+        
+        input{
+            width: 100%;
+            padding: 12px 35px 12px 12px;
+            border: 1px solid #C7C8D2;
+            border-radius: 8px;
+            margin-bottom: 28px;
+        }
+
+        i{
+            position: absolute;
+            right: 0;
+            top: 35%;
+            right: 12px;
+            font-size: 20px;
+            color: #C7C8D2;
+            cursor: pointer;
+        }
+    }
+
+    &__email{
+
+        input{
+            padding: 12px;
+        }
+    }
+}
+
+.form__checkbox{
+    margin-bottom: 40px;
+
+    input{
+        border: 2px solid #C7C8D2;
+        border-radius: 4px;
+        width: 17px;
+        height: 17px;
+        accent-color: #4E60FF;
+    }
+
+    label{
+        position: relative;
+        margin-left: 8px;
+        top: -3px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #2B2B43;
+    }
+}
+
+.form__btn{
+
+    input{
+        cursor: pointer;
+        background: #4E60FF;
+        box-shadow: 0px 8px 20px rgba(78, 96, 255, 0.16);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        color: #FFFFFF;
+        transition: .2s linear;
+
+        &:hover{
+            background: #4153f8;
+        }
+    }
+}
+
+.form__forgot{
+    text-align: center;
+
+    a{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.3px;
+        color: #4E60FF;
+    }
+}
+
+.form-box__signup{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+
+    span{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.1px;
+        color: #545563;
+
+        a{
+            color: #4E60FF;
+            font-weight: 600;
+        }
+    }
+}
+
+
+//slider 
+
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -72px;
+
+    li{
+        margin-left: 8px;
+        
+        &:first-child{
+            margin: 0;
+        }
+
+        button{
+            font-size: 0;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #fff;
+            opacity: .3;
+        }
+    }
+    .slick-active{
+        button{
+            background: #fff;
+            opacity: .9;
+        }
+    }
+}
+
+.scroll-img__item{
+    
+    
+    img{
+        
+    }
+}
